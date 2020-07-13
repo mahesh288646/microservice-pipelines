@@ -24,7 +24,8 @@ def createTestJob(jobName, repoUrl) {
         branchSources {
             git {
                 remote(repoUrl)
-                includes('*')
+                id('1234')
+				includes('*')
             }
         }
         triggers {
